@@ -13,8 +13,6 @@ game:GetService("ReplicatedStorage").RE:FindFirstChild(
 local args4 = {[1] = "RolePlayBio", [2] = ""};
 game:GetService("ReplicatedStorage").RE:FindFirstChild(
     "1RPNam1eTex1t"):FireServer(unpack(args4));
-local OrionLib = loadstring(game:HttpGet(
-                                "https://you.whimper.xyz/sources/slowed/0"))();
 local Window = OrionLib:MakeWindow({
     Name = "BoxBuh Brookhaven",
     HidePremium = false,
@@ -65,7 +63,7 @@ local function copyText()
     });
 end
 CRD:AddButton({
-    Name = "Copiar Link Do Server Do Discord",
+    Name = "Link Do Nosso Server DO Discord :D",
     Callback = copyText
 });
 local Section = CRD:AddSection({Name = "Jogo Join"});
