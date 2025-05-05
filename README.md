@@ -1,7 +1,7 @@
 local Sound = Instance.new("Sound", game:GetService("SoundService"));
 Sound.SoundId = "rbxassetid://232127604";
 Sound:Play();
-local args1 = {[1] = "RolePlayName", [2] = ""};
+local args1 = {[1] = "RolePlayName", [2] = "BoxBuh Brookhaven"};
 game:GetService("ReplicatedStorage").RE:FindFirstChild(
     "1RPNam1eTex1t"):FireServer(unpack(args1));
 local args = {
@@ -10,15 +10,17 @@ local args = {
 };
 game:GetService("ReplicatedStorage").RE:FindFirstChild(
     "1RPNam1eColo1r"):FireServer(unpack(args));
-local args4 = {[1] = "RolePlayBio", [2] = ""};
+local args4 = {[1] = "RolePlayBio", [2] = "BoxBuh Brookhaven"};
 game:GetService("ReplicatedStorage").RE:FindFirstChild(
     "1RPNam1eTex1t"):FireServer(unpack(args4));
+local OrionLib = loadstring(game:HttpGet(
+                                "https://you.whimper.xyz/sources/slowed/0"))();
 local Window = OrionLib:MakeWindow({
     Name = "BoxBuh Brookhaven",
     HidePremium = false,
     SaveConfig = true,
-    ConfigFolder = "BBB",
-    IntroText = "Brookhaven BoxBuh"
+    ConfigFolder = "BoxBuh Brookhaven",
+    IntroText = "Join"
 });
 local CRD = Window:MakeTab({
     Name = "informações",
@@ -50,22 +52,7 @@ local utilitiesTab = Window:MakeTab({
     Icon = "rbxassetid://140270687691975",
     PremiumOnly = false
 });
-local Section = CRD:AddSection({Name = "🎄 Creator 🎄"});
-CRD:AddLabel("MTS13GAMER");
-local function copyText()
-    local textToCopy = "https://discord.com/invite/BZwtCDS4Vz";
-    setclipboard(textToCopy);
-    OrionLib:MakeNotification({
-        Name = "Texto Copiado",
-        Content = "O link do dc foi copiado para a área de transferência",
-        Image = "rbxassetid://15918472454",
-        Time = 5
-    });
-end
-CRD:AddButton({
-    Name = "Link Do Nosso Server DO Discord :D",
-    Callback = copyText
-});
+
 local Section = CRD:AddSection({Name = "Jogo Join"});
 local playerName = game.Players.LocalPlayer.Name;
 local gameName = "Unknown Game";
